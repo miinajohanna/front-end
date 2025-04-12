@@ -1,11 +1,10 @@
-# Front End
+  # Front End
 
-### I love exploring new ideas in web development
-
-### Learning new techniques and trying out different designs
+### I love exploring new ideas in web development and learning new techniques.
 
 
 ## Book Store
+
 ##### This was a school project. I drew the background image in Krita. This was built with HTML and CSS.
 ![Screenshot 2025-04-12 144248](https://github.com/user-attachments/assets/78991576-cd98-4b54-aa7a-80a516b1723e)
 
@@ -13,6 +12,7 @@
 
 
 ## Architecture site
+
 ##### Another school project. I often lean into the dark theme and wanted to completely challenge myself to build the opposite. I planned the site with Figma and the site was built with HTML, CSS, and JavaScript.
 ![image](https://github.com/user-attachments/assets/ca68e708-be09-4201-bad2-2beef8c55835)
 
