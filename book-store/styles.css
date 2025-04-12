@@ -1,0 +1,310 @@
+body {
+    background-image: url("bookstore-background.jpg");
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@font-face {
+    font-family: regularText;
+    src: url(fonts/regular-text.otf);
+}
+
+@font-face {
+    font-family: modernSport;
+    src: url(fonts/modern-sport1.otf);
+}
+
+@font-face {
+    font-family: modernSport2;
+    src: url(fonts/modern-sporty.otf);
+}
+
+@font-face {
+    font-family: nasa;
+    src: url(fonts/nasa.otf);
+}
+
+
+/* GENERAL */
+
+h5 {
+    font-family: nasa;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+p {
+    font-family: regularText;
+    font-size: 15px;
+}
+
+h6 {
+    font-family: modernSport2;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+/* nav bar */
+
+nav {
+    height: 80px;
+    position: sticky;
+    top: 0;
+}
+
+.logo-img {
+    width: 70px;
+    position: absolute;
+    z-index: 1;
+    left: 4px;
+}
+
+.logo-text {
+    color: white;
+    font-size: 18px;
+    font-family: regularText;
+    position: absolute;
+    z-index: 2;
+    left: 70px;
+    top: 15px;
+    width: 200px;
+}
+
+.nav-logo {
+    position: relative;
+    left: 0;
+}
+
+nav > ul {
+    list-style-type: none;
+    margin: 0 100px 0 0;
+    padding: 0;
+}
+
+nav > ul > li {
+    color: white;
+    font-size: 18px;
+    font-family: regularText;
+    display: inline;
+    float: right;
+    margin: 10px 40px 0 0;
+}
+
+nav > ul > li > a:hover {
+    color: #bcc4ff;
+    border-bottom: solid #bcc4ff;
+}
+
+#nav-link {
+    margin-top: 10px;
+}
+
+.drop-btn {
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    font-family: regularText;
+    border: none;
+    cursor: pointer;
+  }
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.392);
+    min-width: 90px;
+    z-index: 1;
+  }
+  
+.dropdown-content a {
+    color: white;
+    padding: 10px;
+    display: block;
+  }
+  
+.dropdown-content a:hover {
+    color: #bcc4ff;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+.dropdown:hover .drop-btn {
+    color: #bcc4ff;
+    border-bottom: solid #bcc4ff;
+  }
+
+.cart-link {
+    width: 22px;
+}
+
+/* title */
+
+.main-title {
+    color: white;
+    font-family: nasa;
+    margin: 200px 0 250px 200px;
+}
+
+#top {
+    font-size: 90px;
+    margin-bottom: 10px;
+}
+
+#sub-heading {
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 0;
+    color: #bcc4ff;
+}
+
+/* discount box */
+
+.discounted {
+    padding:  50px 200px 50px 200px;
+    margin-bottom: 150px;
+    color: white;
+}
+
+.discounted::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.discounted:hover{
+    background-color: rgba(0, 0, 0, 0.392);
+}
+
+.discount-img {
+    margin: 0 30px 0 0;
+    width: 200px;
+    float: left;
+}
+
+#deal-title {
+    font-size: 34px;
+    font-family: modernSport;
+    color: #71f75c;
+}
+
+.deal-info {
+    font-size: 18px;
+    font-family: regularText;
+}
+
+#view-btn {
+    font-family: regularText;
+    font-size: 17px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}  
+
+/* book gallery */
+
+.book {
+    padding: 20px 35px 10px 35px;
+    position: relative;
+}
+
+.books {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px 250px 250px;
+}
+
+.book:hover {
+    background-color: rgba(0, 0, 0, 0.392);
+}
+
+.gallery-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.book-category {
+    color: white;
+    margin: 10px 0 10px 30px;
+    font-family: modernSport;
+    font-size: 20px;
+}
+
+.cart-img{
+    width: 25px;
+    float: inline-end;
+    visibility: hidden;
+    margin-left: 30px;
+}
+
+.book:hover .cart-img{
+    visibility: visible;
+}
+
+.view-btn {
+    font-family: regularText;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    visibility: hidden;
+}
+
+.book:hover .view-btn {
+    visibility: visible;
+    background-color: transparent;
+    color: white;
+    border-bottom: solid white 0.5px;
+}
+
+/* footer */
+footer {
+    font-family: regularText;
+    margin: 70px 40px 10px 40px;
+    padding: 20px;
+}
+
+footer > small {
+    color: white;
+}
+
+footer a {
+    margin-left: 50px;
+}
+
+footer a:hover {
+    color: #bcc4ff;
+}
+/* shopping cart page */
+
+.cart {
+    padding:  50px 100px 50px 100px;
+    color: white;
+}
+
+.cart::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.remove-img {
+    width: 30px;
+    float: inline-end;
+    background-color: rgba(255, 255, 255, 0.71);
+    padding: 3px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
